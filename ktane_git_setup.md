@@ -73,7 +73,11 @@ Now you should be at a screen with the phrase "Quick Setup" at the top. Copy the
 ![repo link](https://imgur.com/download/3q2cpNs)
 
 ### Modkit setup
-If you don't have the modkit installed yet, navigate to the folder you want to put it in. Right-click and select `Git Bash here`. Copy and paste the following commands into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
+If you don't have the modkit installed yet, navigate to the folder you want to put it in. 
+ - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
+ - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`.
+ 
+Then, copy and paste the following commands into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
     git clone https://github.com/keeptalkinggame/ktanemodkit.git
     cd ktanemodkit
@@ -104,17 +108,23 @@ Finally, go back to the GitHub page and refresh it. There should now be files th
 
 ## 4. Updating the repository
 _**This is very important, you need to follow these steps EVERY TIME you work on your mod to make sure your mod still is uploaded correctly!**_
-You don't need to do this _every_ time you change part of the module, but make sure to do it very often. In addition, you can do this either through the terminal (like the rest of the tutorial), or you can use the GUI version of git now. Choose one before continuing:
+You don't need to do this _every_ time you change part of the module, but make sure to do it very often. In addition, you can do this either through the terminal (like the rest of the tutorial), or you can use the GUI version of git now if you are on Windows. Choose one before continuing:
 
-### Via terminal
+### Via terminal (Linux, OSX, Windows (optionally))
 #### Before you start working, make sure to _pull_ in changes from the remote repository (i.e., get latest changes).
-Navigate to the modkit folder. Right-click and select `Git Bash here`. Copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
+ - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
+ - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`.  
+ 
+Then, copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
     git pull
     
 You can then close the terminal.
 #### After you are finished working, make sure _push_ changes to the remote repository (i.e., upload latest changes).
-Navigate to the modkit folder. Right-click and select `Git Bash here`. Copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
+ - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
+ - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`. 
+
+Then, copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
     git add .
 
@@ -128,7 +138,7 @@ Finally, copy and paste the following command into the terminal and hit <kbd>Ent
 _This will prompt you for your GitHub username and password, type those in and hit <kbd>Enter</kbd>/<kbd>Return</kbd> for each one. Note that the password you type will remain invisible while you type it._
 
 You can then close the terminal.
-### Via GUI (Git GUI)
+### Via Git GUI (Windows only)
 #### Before you start working, make sure to _pull_ in changes from the remote repository (i.e., get latest changes).
 Navigate to the modkit folder. Right-click and select `Git GUI here`. When it opens, go to the menu bar and click `Remote > Fetch from > origin`, then `Merge > Local merge...`:
 
