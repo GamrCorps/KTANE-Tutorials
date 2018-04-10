@@ -86,7 +86,6 @@ Then, copy and paste the following commands into the terminal and hit <kbd>Enter
 
 After doing one of those two options, copy and paste the following commands into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
-    cd ktanemodkit
     rm -rf .git
     git init
     git add .
