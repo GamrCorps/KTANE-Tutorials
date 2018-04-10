@@ -65,12 +65,12 @@ Make sure to replace `[Your Name]` and `[Your Email]` with your name and the ema
 ### GitHub setup
 Go to https://github.com/ and log in. Now, look for the `+` icon in the top-right of the screen and click `New repository`.
 
-![GitHub repo setup](https://imgur.com/download/v9pFnce)
+![GitHub Repo Setup](https://imgur.com/download/v9pFnce)
 Then, give the repository a name and click `Create Repository`. Make sure to make this name meaningful, like `KTANE_[ModuleName]`, for example.
 
 Now you should be at a screen with the phrase "Quick Setup" at the top. Copy the text in the text box for later.
 
-![repo link](https://imgur.com/download/3q2cpNs)
+![GitHub Repo link](https://imgur.com/download/3q2cpNs)
 
 ### Modkit setup
 If you don't have the modkit installed yet, navigate to the folder you want to put it in. 
@@ -130,7 +130,7 @@ Then, copy and paste the following command into the terminal and hit <kbd>Enter<
 
 Then, type this command and hit <kbd>Enter</kbd>/<kbd>Return</kbd>, replacing `[Message]` with your _commit message_ (i.e., a short explanation of what you changed):
 
-       git commit -m "[Message]"
+    git commit -m "[Message]"
 
 Finally, copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
@@ -142,9 +142,9 @@ You can then close the terminal.
 #### Before you start working, make sure to _pull_ in changes from the remote repository (i.e., get latest changes).
 Navigate to the modkit folder. Right-click and select `Git GUI here`. When it opens, go to the menu bar and click `Remote > Fetch from > origin`, then `Merge > Local merge...`:
 
-![enter image description here](https://imgur.com/download/SamiayO)
+![Fetch From Remote](https://imgur.com/download/SamiayO)
 
-![enter image description here](https://imgur.com/download/nxGdpQD)
+![Local Merge](https://imgur.com/download/nxGdpQD)
 
 You can then close the window.
 #### After you are finished working, make sure _push_ changes to the remote repository (i.e., upload latest changes).
@@ -153,12 +153,14 @@ Navigate to the modkit folder. Right-click and select `Git GUI here`. Click the 
 Then, type your _commit message_ (i.e., a short explanation of what you changed) in the large text box.
 
 Finally, click the `Push` button.
-![stage](https://imgur.com/download/ip5o005)
+![Stage](https://imgur.com/download/ip5o005)
 
-![message](https://imgur.com/download/4alP5l9)
+![Commit Message](https://imgur.com/download/4alP5l9)
 
-![push](https://imgur.com/download/lMrJXwa)
+![Push](https://imgur.com/download/lMrJXwa)
 
 _This may prompt you for your GitHub username and password. Enter them when prompted_
 
 You can then close the window.
+
+
