@@ -73,7 +73,7 @@ Now you should be at a screen with the phrase "Quick Setup" at the top. Copy the
 ![GitHub Repo link](https://github.com/GamrCorps/KTANE-Tutorials/raw/master/ktane_git_setup/images/3-github-repo-link.png)
 
 ### Modkit setup
-If you don't have the modkit installed yet, navigate to the folder you want to put it in. 
+#### If you don't have the modkit downloaded yet, navigate to the folder you want to put it in. 
  - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
  - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`.
  
@@ -82,7 +82,7 @@ Then, copy and paste the following commands into the terminal and hit <kbd>Enter
     git clone https://github.com/keeptalkinggame/ktanemodkit.git
     cd ktanemodkit
 
-If you already have the modkit installed, navigate to its folder. Right-click and select `Git Bash here`.
+#### If you already have the modkit downloaded (or already have a mod started), navigate to its folder. Right-click and select `Git Bash here`.
 
 Copy and paste the following commands into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
