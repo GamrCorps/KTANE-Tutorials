@@ -5,10 +5,26 @@ There are only a few steps to get your mod set up on Github. This process will c
 
 ### Directory
 
+ 0. [Read Before Starting](#read_before_starting)
  1. [Downloading and Installing git](#download_and_install_git)
  2. [Basic Setup](#basic_setup)
- 3. [Set up the modkit with git](#set_up_the_modkit_with_git)
- 4. [Updating the Repository](#updating_the_repository)
+ 3. [Set Up the modkit With git](#set_up_the_modkit_with_git)
+ 4. [Cleaning Up](#cleaning_up)
+ 5. [Updating the Repository](#updating_the_repository)
+ 6. Accepting and Creating Pull Requests (coming soon)
+ 7. Modding on Multiple Computers (coming soon)
+
+ <a name="read_before_starting"/>
+
+## 0. Read Before Starting
+This guide is intended to give you _very_ basic foundational knowledge of how to set up and use git to get you up and running for your mod(s). Two assumptions are made throughout this guide:
+ 1. You know basic computer skills, such as how to navigate to a folder on your computer or open a specific program.
+ 2. You have at least a relatively-stable internet connection.
+
+Other than that, the guide is pretty self-explanatory. Some notes:
+ 1. If you only intend to put your code on GitHub for others to see, you just need to follow sections 1-5; however, I would recommend reading every section just to get yourself acquainted with git and GitHub.
+ 2. Sections 1 and 2 only need to be performed _once per computer_. See section 7 for more details.
+ 3. This guide looks really long and complicated. It really isn't. Just follow the instructions and you will be good to go in no time at all.
 
 <a name="download_and_install_git"/>
 
@@ -20,7 +36,7 @@ Open a new terminal window. Copy and paste the following commands into the termi
     sudo apt-get update
     sudo apt-get upgrade
     sudo apt-get install git
-    
+
 ### _Red Hat_-based linux (e.g., CentOS)
 Open a new terminal window. Copy and paste the following commands into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
@@ -32,7 +48,7 @@ Open a new terminal window. Copy and paste the following commands into the termi
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
-    
+
 You will be offered to install the _Command Line Developer Tools_ from _Apple_. **Confirm by clicking  _Install_**. After the installation finished, continue installing _Homebrew_ by **hitting  <kbd>Enter</kbd>/<kbd>Return</kbd>** again.
 
 Then, copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
@@ -40,7 +56,7 @@ Then, copy and paste the following command into the terminal and hit <kbd>Enter<
     brew install git
 
 ### Windows
-Download _Git for Windows_ [here](https://gitforwindows.org/) and install. When installing make sure to choose a different text editor (I would recommend either nano (if possible) or [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html) (otherwise) if you have it installed). 
+Download _Git for Windows_ [here](https://gitforwindows.org/) and install. When installing make sure to choose a different text editor (I would recommend either nano (if possible) or [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html) (otherwise) if you have it installed).
 
 ![Installer Screen](https://raw.githubusercontent.com/GamrCorps/KTANE-Tutorials/master/ktane_git_setup/images/1-windows-installer.png)
 Also, make sure to choose `Use git from Git Bash` instead of `Use git from Windows Command Prompt` when you have the option to.
@@ -61,7 +77,7 @@ Make sure to replace `[Your Name]` and `[Your Email]` with your name and the ema
 
 <a name="set_up_the_modkit_with_git"/>
 
-## 3. Set up the modkit with git
+## 3. Set Up the modkit with git
 ### GitHub setup
 Go to https://github.com/ and log in. Now, look for the `+` icon in the top-right of the screen and click `New repository`.
 
@@ -73,10 +89,10 @@ Now you should be at a screen with the phrase "Quick Setup" at the top. Copy the
 ![GitHub Repo link](https://github.com/GamrCorps/KTANE-Tutorials/raw/master/ktane_git_setup/images/3-github-repo-link.png)
 
 ### Modkit setup (one of two options)
-#### 1. If you don't have the modkit downloaded yet, navigate to the folder you want to put it in. 
+#### 1. If you don't have the modkit downloaded yet, navigate to the folder you want to put it in.
  - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
  - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`.
- 
+
 Then, copy and paste the following commands into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
     git clone https://github.com/keeptalkinggame/ktanemodkit.git
@@ -103,25 +119,36 @@ _This will prompt you for your GitHub username and password, type those in and h
 
 Finally, go back to the GitHub page and refresh it. There should now be files there.
 
+<a name="cleaning_up"/>
+
+## 4. Cleaning Up
+_**This step does not required, but highly encouraged.**_
+
+Here are a few things that can help keep your repository neat and tidy:
+
+ 1. **Delete the examples.** This is not just recommended for cleaning up the repository, but you should do it after you are finished using any example assets or didn't need them in the first place. To do this, simply delete the `Examples` folder in the `Assets` directory. **Be careful though, make sure you are not using any example assets before you delete the folder.**
+ 2. **Update the README.md file.** This is something to get into a good habit of doing. Open the `README.md` file in the modkit folder in your favorite text editor. You should put the name of your mod, your name, and a description of it in that file. You can include anything you want, like a like to the workshop page, but it is up to you. In addition, you can add formatting with **Markdown** (you can find a cheat sheet for it [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)).
+
 <a name="updating_the_repository"/>
 
-## 4. Updating the repository
+## 5. Updating the Repository
 _**This is very important, you need to follow these steps EVERY TIME you work on your mod to make sure your mod still is uploaded correctly!**_
+
 You don't need to do this _every_ time you change part of the module, but make sure to do it very often. In addition, you can do this either through the terminal (like the rest of the tutorial), or you can use the GUI version of git now if you are on Windows. Choose one before continuing:
 
 ### Via terminal (Linux, OSX, Windows (optionally))
 #### Before you start working, make sure to _pull_ in changes from the remote repository (i.e., get latest changes).
  - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
  - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`.  
- 
+
 Then, copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
     git pull
-    
+
 You can then close the terminal.
 #### After you are finished working, make sure _push_ changes to the remote repository (i.e., upload latest changes).
  - **Linux/OSX:** Open a terminal. Type `cd [path/to/modkit/folder]`, substituting in the path to the modkit folder on your computer.
- - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`. 
+ - **Windows:** Navigate to the modkit folder. Right-click and select `Git Bash here`.
 
 Then, copy and paste the following command into the terminal and hit <kbd>Enter</kbd>/<kbd>Return</kbd>:
 
@@ -158,8 +185,6 @@ Finally, click the `Push` button.
 
 ![Push](https://github.com/GamrCorps/KTANE-Tutorials/raw/master/ktane_git_setup/images/4-push.png)
 
-_This may prompt you for your GitHub username and password. Enter them when prompted_
+_This may prompt you for your GitHub username and password. Enter them when prompted._
 
 You can then close the window.
-
-
